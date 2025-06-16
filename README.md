@@ -1,4 +1,4 @@
-# Bioinformatics Learning
+# Bioinformatics Track
 
 This repository contains my notes, exercises, and code as I self-learn bioinformatics based on the PGC Bioinformatics Track and my ongoing internship at the Philippine Genome Center – Visayas.
 
