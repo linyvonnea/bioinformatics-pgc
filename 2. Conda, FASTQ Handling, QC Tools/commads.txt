@@ -1,0 +1,20 @@
+
+# SET UP ENVIRONMENT
+conda create -n bioinfo python=3.10 -y
+conda activate bioinfo
+
+# FASTQC AND SEQKIT TOOLS
+conda install -c bioconda fastqc seqkit -y
+
+# DOWNLOAD FASTQ FILE
+curl -L -o test.fastq.gz https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR258/003/SRR2584863/SRR2584863_1.fastq.gz
+gunzip test.fastq.gz
+
+# CONFIRM CONTENT
+head test.fastq
+
+# RUN QUALITY CONTROL
+fastqc test.fastq
+
+# SEQKIT
+seqkit stats test.fastq
